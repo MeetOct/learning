@@ -1,0 +1,6 @@
+C:\Users\30282\Desktop\Learning\Learning.AOP\bin\Debug\Learning.AOP.exe.config
+C:\Users\30282\Desktop\Learning\Learning.AOP\bin\Debug\Learning.AOP.exe
+C:\Users\30282\Desktop\Learning\Learning.AOP\bin\Debug\Learning.AOP.pdb
+C:\Users\30282\Desktop\Learning\Learning.AOP\obj\Debug\Learning.AOP.csprojResolveAssemblyReference.cache
+C:\Users\30282\Desktop\Learning\Learning.AOP\obj\Debug\Learning.AOP.exe
+C:\Users\30282\Desktop\Learning\Learning.AOP\obj\Debug\Learning.AOP.pdb
