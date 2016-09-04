@@ -1,0 +1,10 @@
+C:\Users\30282\Desktop\Learning\Learning.Castle\bin\Debug\Learning.Castle.exe.config
+C:\Users\30282\Desktop\Learning\Learning.Castle\bin\Debug\Learning.Castle.exe
+C:\Users\30282\Desktop\Learning\Learning.Castle\bin\Debug\Learning.Castle.pdb
+C:\Users\30282\Desktop\Learning\Learning.Castle\bin\Debug\Castle.Core.dll
+C:\Users\30282\Desktop\Learning\Learning.Castle\bin\Debug\Castle.Windsor.dll
+C:\Users\30282\Desktop\Learning\Learning.Castle\bin\Debug\Castle.Core.xml
+C:\Users\30282\Desktop\Learning\Learning.Castle\bin\Debug\Castle.Windsor.xml
+C:\Users\30282\Desktop\Learning\Learning.Castle\obj\Debug\Learning.Castle.csprojResolveAssemblyReference.cache
+C:\Users\30282\Desktop\Learning\Learning.Castle\obj\Debug\Learning.Castle.exe
+C:\Users\30282\Desktop\Learning\Learning.Castle\obj\Debug\Learning.Castle.pdb
