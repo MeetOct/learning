@@ -1,0 +1,7 @@
+E:\project\learning\Learning.RabbitMQ\bin\Debug\Learning.RabbitMQ.exe.config
+E:\project\learning\Learning.RabbitMQ\bin\Debug\Learning.RabbitMQ.exe
+E:\project\learning\Learning.RabbitMQ\bin\Debug\Learning.RabbitMQ.pdb
+E:\project\learning\Learning.RabbitMQ\bin\Debug\RabbitMQ.Client.dll
+E:\project\learning\Learning.RabbitMQ\obj\Debug\Learning.RabbitMQ.csprojResolveAssemblyReference.cache
+E:\project\learning\Learning.RabbitMQ\obj\Debug\Learning.RabbitMQ.exe
+E:\project\learning\Learning.RabbitMQ\obj\Debug\Learning.RabbitMQ.pdb
