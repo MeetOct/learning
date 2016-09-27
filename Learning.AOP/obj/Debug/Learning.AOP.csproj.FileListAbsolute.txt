@@ -7,3 +7,8 @@ C:\Users\30282\Desktop\Learning\Learning.AOP\obj\Debug\Learning.AOP.pdb
 E:\project\learning\Learning.AOP\bin\Debug\Learning.AOP.exe.config
 E:\project\learning\Learning.AOP\obj\Debug\Learning.AOP.exe
 E:\project\learning\Learning.AOP\obj\Debug\Learning.AOP.pdb
+E:\github\learning\Learning.AOP\bin\Debug\Learning.AOP.exe.config
+E:\github\learning\Learning.AOP\bin\Debug\Learning.AOP.exe
+E:\github\learning\Learning.AOP\bin\Debug\Learning.AOP.pdb
+E:\github\learning\Learning.AOP\obj\Debug\Learning.AOP.exe
+E:\github\learning\Learning.AOP\obj\Debug\Learning.AOP.pdb

@@ -8,3 +8,13 @@ C:\Users\30282\Desktop\Learning\Learning.Castle\bin\Debug\Castle.Windsor.xml
 C:\Users\30282\Desktop\Learning\Learning.Castle\obj\Debug\Learning.Castle.csprojResolveAssemblyReference.cache
 C:\Users\30282\Desktop\Learning\Learning.Castle\obj\Debug\Learning.Castle.exe
 C:\Users\30282\Desktop\Learning\Learning.Castle\obj\Debug\Learning.Castle.pdb
+E:\github\learning\Learning.Castle\bin\Debug\Learning.Castle.exe.config
+E:\github\learning\Learning.Castle\bin\Debug\Learning.Castle.exe
+E:\github\learning\Learning.Castle\bin\Debug\Learning.Castle.pdb
+E:\github\learning\Learning.Castle\bin\Debug\Castle.Core.dll
+E:\github\learning\Learning.Castle\bin\Debug\Castle.Windsor.dll
+E:\github\learning\Learning.Castle\bin\Debug\Castle.Core.xml
+E:\github\learning\Learning.Castle\bin\Debug\Castle.Windsor.xml
+E:\github\learning\Learning.Castle\obj\Debug\Learning.Castle.csprojResolveAssemblyReference.cache
+E:\github\learning\Learning.Castle\obj\Debug\Learning.Castle.exe
+E:\github\learning\Learning.Castle\obj\Debug\Learning.Castle.pdb

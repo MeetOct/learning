@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.Castle", "Learning
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.RabbitMQ", "Learning.RabbitMQ\Learning.RabbitMQ.csproj", "{B4EB0A3F-EA8D-478F-B9EB-5BCCAD5F0713}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.SignalR", "Learning.SignalR\Learning.SignalR.csproj", "{22C906F6-7355-46B6-A523-92EB1093AFCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B4EB0A3F-EA8D-478F-B9EB-5BCCAD5F0713}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4EB0A3F-EA8D-478F-B9EB-5BCCAD5F0713}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4EB0A3F-EA8D-478F-B9EB-5BCCAD5F0713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C906F6-7355-46B6-A523-92EB1093AFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C906F6-7355-46B6-A523-92EB1093AFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C906F6-7355-46B6-A523-92EB1093AFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C906F6-7355-46B6-A523-92EB1093AFCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

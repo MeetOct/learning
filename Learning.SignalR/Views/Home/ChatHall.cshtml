@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "聊天室";
+}
+<style>
+    .send {
+        margin-top: 30px;
+        float: right;
+    }
+    .say {
+        margin-top:30px;
+        min-height:150px;
+        overflow-y:auto;
+    }
+    .said {
+        border:groove;
+        overflow-y:auto;
+        height: 400px;
+    }
+        .said div {
+            padding:5px 0;
+        }
+</style>
+
+<div class="col-lg-8">
+    <div>
+        <h2>欢迎来到聊天室！！</h2>
+    </div>
+    <div>
+        <div class="said" id="text-said">
+        </div>
+        <div>
+            <textarea class="form-control say" id="text-say"></textarea>
+            <button type="button" class="btn btn-primary btn-lg btn-block send" id="send">发送</button>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        var $name="陌生人"
+        var $said = $("#text-said");
+        var $say = $("#text-say");
+        var $send = $("#send");
+
+        function appendChat(data) {
+            var $div = $("<div>—》" + data + "</div>");
+            $said.append($div);
+        }
+        // 获取用户名称。
+        $name = prompt('请输入您的名称：', '陌生人');
+        // 设置初始焦点到消息输入框。
+        $say.focus();
+
+        function keyevent() {
+            if (event.keyCode == 13)
+                $send.click();
+        }
+        $(function () {
+            document.onkeydown = keyevent;
+
+            var $chat = $.connection.chatHub;
+
+            $chat.client.say = appendChat;
+
+            $send.click(function () {
+                $chat.server.say($name + "：" + $say.val());
+                $say.val("");
+            });
+
+            $.connection.hub.start().done(function () {
+                $chat.server.say("欢迎" + $name + "，请大家尽情调戏他~~");
+            });
+        });
+    </script>
+}
