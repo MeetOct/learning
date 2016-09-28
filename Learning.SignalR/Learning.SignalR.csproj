@@ -145,16 +145,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="badworlds.txt" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\layer\layer.js" />
+    <Content Include="Content\layer\skin\default\icon-ext.png" />
+    <Content Include="Content\layer\skin\default\icon.png" />
+    <Content Include="Content\layer\skin\default\loading-0.gif" />
+    <Content Include="Content\layer\skin\default\loading-1.gif" />
+    <Content Include="Content\layer\skin\default\loading-2.gif" />
+    <Content Include="Content\layer\skin\layer.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -171,10 +175,12 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\BadWordsFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Hubs\ChatHub.cs" />
+    <Compile Include="Models\ChatUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -185,6 +191,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -194,7 +201,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

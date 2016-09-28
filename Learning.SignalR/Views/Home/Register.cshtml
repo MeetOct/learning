@@ -1,0 +1,62 @@
+﻿
+
+<div style="padding:0 50px;margin:-30px 0;">
+    <input class="form-control" id="check" placeholder="请输入昵称" style="margin:10px 0;">
+    <button type="button" class="btn btn-primary btn-block" id="transmit">确认</button>
+</div>
+
+@section css{
+    <link href="~/Content/layer/skin/layer.css" rel="stylesheet" />
+}
+@section scripts{
+    <script src="~/Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="~/Content/layer/layer.js"></script>
+
+    <script>
+        var index = parent.layer.getFrameIndex(window.name);
+        var $check = $("#check")
+        var $chat = $.connection.chatHub;
+        var result = false;
+        function error(error) {
+            layer.msg(error, { time: 1000, icon: 2 });
+        }
+
+        //这个方法不能命名为close,别问为什么！！
+        function closeRegister() {
+            parent.$name.val($check.val());
+            parent.layer.closeAll();
+            $.connection.hub.stop();
+        };
+        $(function () {
+            $chat.client.error = error;
+            $chat.client.closeRegister = closeRegister;
+            $.connection.hub.start();
+            //给父页面传值
+            $('#transmit').on('click', function () {
+                if ($check.val() == "" || $check.val() == undefined) {
+                    layer.msg("昵称不能为空", { time: 1000, icon: 2 });
+                    return;
+                }
+                $chat.server.register($check.val(), parent.$cId);
+            });
+
+            //// SignalR is aware of connection problems, before it goes into reconnecting mode.
+            //$.connection.hub.connectionSlow(function () {
+            //    console.log("connectionSlow");
+            //});
+
+            ////when SignalR is aware of a disconnection and is going into reconnecting mode.
+            //$.connection.hub.reconnecting(function () {
+            //    console.log("reconnecting");
+            //});
+
+            ////timeout 或者是真的断开了
+            //$.connection.hub.disconnected(function () {
+            //    console.log("time out");
+            //});
+
+        })
+    </script>
+}
+

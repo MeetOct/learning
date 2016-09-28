@@ -2,32 +2,33 @@
 @{
     ViewBag.Title = "聊天室";
 }
-<style>
-    .send {
-        margin-top: 30px;
-        float: right;
-    }
-    .say {
-        margin-top:30px;
-        min-height:150px;
-        overflow-y:auto;
-    }
-    .said {
-        border:groove;
-        overflow-y:auto;
-        height: 400px;
-    }
-        .said div {
-            padding:5px 0;
-        }
-</style>
 
-<div class="col-lg-8">
-    <div>
-        <h2>欢迎来到聊天室！！</h2>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("聊天大厅", "ChatHall", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav"></ul>
+        </div>
     </div>
-    <div>
+</div>
+
+<div class="container body-content">
+    <div class="col-lg-8" style="margin-top:100px">
+        <h2>欢迎来到聊天室！！</h2>
         <div class="said" id="text-said">
+        </div>
+        <div class="info">
+            <div class="input-group">
+                <div class="input-group-addon">昵称</div>
+                <input class="form-control" disabled id="name">
+            </div>
         </div>
         <div>
             <textarea class="form-control say" id="text-say"></textarea>
@@ -36,40 +37,100 @@
     </div>
 </div>
 
+
+@section css{
+    <style>
+        .send {
+            margin-top: 30px;
+            float: right;
+        }
+
+        .say {
+            margin-top: 10px;
+            min-height: 150px;
+            overflow-y: auto;
+        }
+
+        .said {
+            border: groove;
+            overflow-y: auto;
+            height: 400px;
+        }
+
+            .said div {
+                padding: 5px 0;
+            }
+
+        .info {
+            margin-top: 30px;
+        }
+
+            .info .input-group {
+                max-width: 200px;
+            }
+    </style>
+    <link href="~/Content/layer/skin/layer.css" rel="stylesheet" />
+}
 @section scripts{
+    <script src="~/Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="~/Content/layer/layer.js"></script>
     <script>
-        var $name="陌生人"
+        var $name = $("#name")
         var $said = $("#text-said");
         var $say = $("#text-say");
         var $send = $("#send");
+        var $chat = $.connection.chatHub;
+        var $cId = "";
 
-        function appendChat(data) {
-            var $div = $("<div>—》" + data + "</div>");
+        function appendChat(msg) {
+            var $div = $("<div>—》" + msg + "</div>");
             $said.append($div);
         }
-        // 获取用户名称。
-        $name = prompt('请输入您的名称：', '陌生人');
-        // 设置初始焦点到消息输入框。
-        $say.focus();
+        function error(error) {
+            layer.msg(error, { time: 2000, icon: 2 });
+        }
+        function ok() {
+            $say.val("");
+        }
 
         function keyevent() {
             if (event.keyCode == 13)
                 $send.click();
         }
+
         $(function () {
             document.onkeydown = keyevent;
-
-            var $chat = $.connection.chatHub;
-
-            $chat.client.say = appendChat;
-
-            $send.click(function () {
-                $chat.server.say($name + "：" + $say.val());
-                $say.val("");
-            });
+            $chat.client.broadcast = appendChat;
+            $chat.client.error = error;
+            $chat.client.ok = ok;
 
             $.connection.hub.start().done(function () {
-                $chat.server.say("欢迎" + $name + "，请大家尽情调戏他~~");
+                $cId = $.connection.hub.id;
+            });
+
+            $send.click(function () {
+                $chat.server.broadcast($say.val());
+            });
+
+            //layer.open({
+            //    type: 1,
+            //    title: "用户昵称",
+            //    closeBtn: 0,
+            //    area: ['300px', '200px'],
+            //    fix: true, //不固定
+            //    maxmin: false,
+            //    content: '/Home/Register'
+            //});
+
+            layer.open({
+                type: 2,
+                title:"用户昵称",
+                closeBtn: 0,
+                area: ['300px', '200px'],
+                //fix: true, //不固定
+                //maxmin: false,
+                content: '/Home/Register'
             });
         });
     </script>

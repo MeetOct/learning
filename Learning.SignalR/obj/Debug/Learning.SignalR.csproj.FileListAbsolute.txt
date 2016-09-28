@@ -65,6 +65,5 @@ E:\github\learning\Learning.SignalR\bin\zh-Hans\System.Web.Webpages.Deployment.r
 E:\github\learning\Learning.SignalR\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
 E:\github\learning\Learning.SignalR\bin\zh-Hans\System.Web.Helpers.resources.dll
 E:\github\learning\Learning.SignalR\bin\zh-Hans\System.Web.Mvc.resources.dll
-E:\github\learning\Learning.SignalR\obj\Debug\Learning.SignalR.csprojResolveAssemblyReference.cache
 E:\github\learning\Learning.SignalR\obj\Debug\Learning.SignalR.dll
 E:\github\learning\Learning.SignalR\obj\Debug\Learning.SignalR.pdb
