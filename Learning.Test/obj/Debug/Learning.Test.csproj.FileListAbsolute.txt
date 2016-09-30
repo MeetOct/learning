@@ -1,0 +1,7 @@
+E:\github\learning\Learning.Test\bin\Debug\Learning.Test.dll
+E:\github\learning\Learning.Test\bin\Debug\Learning.Test.pdb
+E:\github\learning\Learning.Test\bin\Debug\Learn.Core.dll
+E:\github\learning\Learning.Test\bin\Debug\Learn.Core.pdb
+E:\github\learning\Learning.Test\obj\Debug\Learning.Test.csprojResolveAssemblyReference.cache
+E:\github\learning\Learning.Test\obj\Debug\Learning.Test.dll
+E:\github\learning\Learning.Test\obj\Debug\Learning.Test.pdb

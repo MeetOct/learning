@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.RabbitMQ", "Learni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.SignalR", "Learning.SignalR\Learning.SignalR.csproj", "{22C906F6-7355-46B6-A523-92EB1093AFCC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.Core", "Learning.Core\Learning.Core.csproj", "{6C82B106-7468-4E84-8EDA-A04F1300B4D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.Test", "Learning.Test\Learning.Test.csproj", "{A6B64EEE-8AAA-493C-85D2-A3666F0E3EE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{22C906F6-7355-46B6-A523-92EB1093AFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22C906F6-7355-46B6-A523-92EB1093AFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22C906F6-7355-46B6-A523-92EB1093AFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C82B106-7468-4E84-8EDA-A04F1300B4D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C82B106-7468-4E84-8EDA-A04F1300B4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C82B106-7468-4E84-8EDA-A04F1300B4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C82B106-7468-4E84-8EDA-A04F1300B4D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B64EEE-8AAA-493C-85D2-A3666F0E3EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B64EEE-8AAA-493C-85D2-A3666F0E3EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B64EEE-8AAA-493C-85D2-A3666F0E3EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B64EEE-8AAA-493C-85D2-A3666F0E3EE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

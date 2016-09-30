@@ -11,11 +11,8 @@ namespace Learning.SignalR.Hubs
 {
 	[HubName("chatHub")]
 	public class ChatHub : Hub
-	{b
+	{
 		private static ConcurrentDictionary<string, ChatUser> currentUser = new ConcurrentDictionary<string, ChatUser>();
-
-		//这个需要修改成单例（也要保证线程安全）
-		private static BadWordsFilter filter = new BadWordsFilter(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "badworlds.txt"));
 
 		public void Register(string name,string id)
 		{
@@ -25,7 +22,7 @@ namespace Learning.SignalR.Hubs
 				return;
 			}
 			name = name.Trim();
-			if (filter.HasBadWord(name))
+			if (FilterBadWords(name))
 			{
 				Clients.Client(Context.ConnectionId).error("昵称包含敏感词~");
 				return;
@@ -46,7 +43,7 @@ namespace Learning.SignalR.Hubs
 			{
 				return;
 			}
-			if (filter.HasBadWord(message))
+			if (FilterBadWords(message))
 			{
 				Clients.Client(Context.ConnectionId).error("信息包含敏感词~");
 				return;
@@ -88,6 +85,12 @@ namespace Learning.SignalR.Hubs
 				return false;
 			}
 			return true;
+		}
+
+		private bool FilterBadWords(string message)
+		{
+			BadWordsFilter filter = new BadWordsFilter(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "badworlds.txt"));
+			return filter.HasBadWord(message);
 		}
 	}
 }

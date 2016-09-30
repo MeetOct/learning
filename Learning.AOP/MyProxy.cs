@@ -41,7 +41,7 @@ namespace Learning.AOP
 		//public CultureInfo cutureInfo { get; set; }
 	}
 
-	public static class Singleton
+	public static class ActivatorContainer
 	{
 		public static Container GetContainer()
 		{
