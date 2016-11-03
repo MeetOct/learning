@@ -10,7 +10,7 @@ namespace Learning.Test
 {
 	public class User
 	{
-
+		public User(){}
 	}
 	[TestClass]
 	public class Core_Common_Test
