@@ -12,3 +12,4 @@ E:\github\learning\Learning.AOP\bin\Debug\Learning.AOP.exe
 E:\github\learning\Learning.AOP\bin\Debug\Learning.AOP.pdb
 E:\github\learning\Learning.AOP\obj\Debug\Learning.AOP.exe
 E:\github\learning\Learning.AOP\obj\Debug\Learning.AOP.pdb
+E:\github\learning\Learning.AOP\obj\Debug\Learning.AOP.csprojResolveAssemblyReference.cache

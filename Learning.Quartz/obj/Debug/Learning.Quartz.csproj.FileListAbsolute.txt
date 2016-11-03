@@ -1,0 +1,15 @@
+E:\github\learning\Learning.Quartz\bin\Debug\Learning.Quartz.exe.config
+E:\github\learning\Learning.Quartz\bin\Debug\Learning.Quartz.exe
+E:\github\learning\Learning.Quartz\bin\Debug\Learning.Quartz.pdb
+E:\github\learning\Learning.Quartz\bin\Debug\Common.Logging.Core.dll
+E:\github\learning\Learning.Quartz\bin\Debug\Common.Logging.dll
+E:\github\learning\Learning.Quartz\bin\Debug\Quartz.dll
+E:\github\learning\Learning.Quartz\bin\Debug\Common.Logging.pdb
+E:\github\learning\Learning.Quartz\bin\Debug\Common.Logging.xml
+E:\github\learning\Learning.Quartz\bin\Debug\Common.Logging.Core.pdb
+E:\github\learning\Learning.Quartz\bin\Debug\Common.Logging.Core.xml
+E:\github\learning\Learning.Quartz\bin\Debug\Quartz.pdb
+E:\github\learning\Learning.Quartz\bin\Debug\Quartz.xml
+E:\github\learning\Learning.Quartz\obj\Debug\Learning.Quartz.exe
+E:\github\learning\Learning.Quartz\obj\Debug\Learning.Quartz.pdb
+E:\github\learning\Learning.Quartz\obj\Debug\Learning.Quartz.csprojResolveAssemblyReference.cache
