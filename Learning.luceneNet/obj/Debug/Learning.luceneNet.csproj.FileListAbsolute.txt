@@ -1,0 +1,12 @@
+H:\gayhub\learning\Learning.luceneNet\bin\Debug\Learning.luceneNet.exe.config
+H:\gayhub\learning\Learning.luceneNet\bin\Debug\Learning.luceneNet.exe
+H:\gayhub\learning\Learning.luceneNet\bin\Debug\Learning.luceneNet.pdb
+H:\gayhub\learning\Learning.luceneNet\bin\Debug\Dos.PanGu.dll
+H:\gayhub\learning\Learning.luceneNet\bin\Debug\Dos.PanGu.Lucene.Analyzer.dll
+H:\gayhub\learning\Learning.luceneNet\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\gayhub\learning\Learning.luceneNet\bin\Debug\Lucene.Net.dll
+H:\gayhub\learning\Learning.luceneNet\bin\Debug\Lucene.Net.pdb
+H:\gayhub\learning\Learning.luceneNet\bin\Debug\Lucene.Net.xml
+H:\gayhub\learning\Learning.luceneNet\obj\Debug\Learning.luceneNet.exe
+H:\gayhub\learning\Learning.luceneNet\obj\Debug\Learning.luceneNet.pdb
+H:\gayhub\learning\Learning.luceneNet\obj\Debug\Learning.luceneNet.csprojResolveAssemblyReference.cache
