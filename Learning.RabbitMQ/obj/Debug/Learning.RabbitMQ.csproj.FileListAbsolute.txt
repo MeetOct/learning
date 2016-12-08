@@ -12,3 +12,10 @@ E:\github\learning\Learning.RabbitMQ\bin\Debug\RabbitMQ.Client.dll
 E:\github\learning\Learning.RabbitMQ\obj\Debug\Learning.RabbitMQ.csprojResolveAssemblyReference.cache
 E:\github\learning\Learning.RabbitMQ\obj\Debug\Learning.RabbitMQ.exe
 E:\github\learning\Learning.RabbitMQ\obj\Debug\Learning.RabbitMQ.pdb
+H:\gayhub\learning\Learning.RabbitMQ\bin\Debug\Learning.RabbitMQ.exe.config
+H:\gayhub\learning\Learning.RabbitMQ\bin\Debug\Learning.RabbitMQ.exe
+H:\gayhub\learning\Learning.RabbitMQ\bin\Debug\Learning.RabbitMQ.pdb
+H:\gayhub\learning\Learning.RabbitMQ\bin\Debug\RabbitMQ.Client.dll
+H:\gayhub\learning\Learning.RabbitMQ\obj\Debug\Learning.RabbitMQ.csprojResolveAssemblyReference.cache
+H:\gayhub\learning\Learning.RabbitMQ\obj\Debug\Learning.RabbitMQ.exe
+H:\gayhub\learning\Learning.RabbitMQ\obj\Debug\Learning.RabbitMQ.pdb

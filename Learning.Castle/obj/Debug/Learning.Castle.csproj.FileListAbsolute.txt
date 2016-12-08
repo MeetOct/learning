@@ -18,3 +18,13 @@ E:\github\learning\Learning.Castle\bin\Debug\Castle.Windsor.xml
 E:\github\learning\Learning.Castle\obj\Debug\Learning.Castle.csprojResolveAssemblyReference.cache
 E:\github\learning\Learning.Castle\obj\Debug\Learning.Castle.exe
 E:\github\learning\Learning.Castle\obj\Debug\Learning.Castle.pdb
+H:\gayhub\learning\Learning.Castle\bin\Debug\Learning.Castle.exe.config
+H:\gayhub\learning\Learning.Castle\bin\Debug\Learning.Castle.exe
+H:\gayhub\learning\Learning.Castle\bin\Debug\Learning.Castle.pdb
+H:\gayhub\learning\Learning.Castle\bin\Debug\Castle.Core.dll
+H:\gayhub\learning\Learning.Castle\bin\Debug\Castle.Windsor.dll
+H:\gayhub\learning\Learning.Castle\bin\Debug\Castle.Core.xml
+H:\gayhub\learning\Learning.Castle\bin\Debug\Castle.Windsor.xml
+H:\gayhub\learning\Learning.Castle\obj\Debug\Learning.Castle.csprojResolveAssemblyReference.cache
+H:\gayhub\learning\Learning.Castle\obj\Debug\Learning.Castle.exe
+H:\gayhub\learning\Learning.Castle\obj\Debug\Learning.Castle.pdb
