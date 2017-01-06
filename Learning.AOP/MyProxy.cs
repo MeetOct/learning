@@ -3,68 +3,60 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Remoting;
+using System.Runtime.Remoting.Activation;
 using System.Runtime.Remoting.Messaging;
 using System.Runtime.Remoting.Proxies;
+using System.Runtime.Remoting.Services;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Learning.AOP
 {
-	public class MyProxy<T> : RealProxy
+	public class MyProxy: RealProxy
 	{
-		private T _target;
-		public MyProxy(T target):base(typeof(T))
+		private object _target; //目标代理类
+		private List<IIntercept> _intercepts; //拦截器
+		public MyProxy(object target, Type type,params IIntercept[] intercepts) : base(type)
 		{
 			_target = target;
+			_intercepts = intercepts!=null? intercepts.ToList():null;
 		}
 		public override IMessage Invoke(IMessage msg)
 		{
-			var call = msg as IMethodCallMessage;
-			if (call == null)
+			var ctr = msg as IConstructionCallMessage;
+			if (ctr != null)
 			{
-				Console.WriteLine("error");
+				Console.WriteLine("ctr");
+				RealProxy _proxy = RemotingServices.GetRealProxy(this._target);
+				_proxy.InitializeServerObject(ctr);
+				MarshalByRefObject tp = (MarshalByRefObject)this.GetTransparentProxy();
+				return EnterpriseServicesHelper.CreateConstructionReturnMessage(ctr, tp);
 			}
-			Console.WriteLine("before proxy");
-			var result = call.MethodBase.Invoke(this._target,call.Args);
-			Console.WriteLine("end proxy");
 
+			if(_intercepts!=null)
+			{
+				foreach (var _intercept in _intercepts)
+				{
+					_intercept.Do();
+				}
+			}
+			var call = msg as IMethodCallMessage;
+			Console.WriteLine(string.Format("proxy method:{0}", call.MethodName));
+			var result = call.MethodBase.Invoke(this._target,call.Args);
 			return new ReturnMessage(result,new object[0],0,null,call);
 		}
 	}
 
-	public class Container
-	{
-		//public Type type { get; set; }
-		//public BindingFlags flags { get; set; }
-		//public Binder binder { get; set; }
-		public List<object> args { get; set; }=new List<object>();
-		//public CultureInfo cutureInfo { get; set; }
-	}
 
 	public static class ActivatorContainer
 	{
-		public static Container GetContainer()
+		public static T Create<T>(params IIntercept[] intercepts)
 		{
+			var result= Activator.CreateInstance(typeof(T));
 
-			return new Container() { };
-		}
-
-		/// <summary>
-		/// 构造函数参数(warning：参数添加顺序必须一致)
-		/// </summary>
-		/// <param name="sp"></param>
-		/// <param name="value"></param>
-		/// <returns></returns>
-		public static Container AddParameter(this Container sp,object value)
-		{
-			sp.args.Add(value);
-			return sp;
-		}
-
-		public static T Create<T>(this Container sp)
-		{
-			var result= (T)Activator.CreateInstance(typeof(T), sp.args.ToArray());
-			return (T)new MyProxy<T> (result).GetTransparentProxy();
+			var myProxy = new MyProxy(result, typeof(T), intercepts);
+			return (T)myProxy.GetTransparentProxy();
 		}
 	}
 }

@@ -1,0 +1,39 @@
+H:\gayhub\learning\Learning.MyBot\bin\Bot Application1.dll.config
+H:\gayhub\learning\Learning.MyBot\bin\Bot Application1.dll
+H:\gayhub\learning\Learning.MyBot\bin\Bot Application1.pdb
+H:\gayhub\learning\Learning.MyBot\bin\Autofac.dll
+H:\gayhub\learning\Learning.MyBot\bin\Chronic.dll
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.Bot.Builder.dll
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.Bot.Connector.dll
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.Rest.ClientRuntime.dll
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.WindowsAzure.Configuration.dll
+H:\gayhub\learning\Learning.MyBot\bin\Newtonsoft.Json.dll
+H:\gayhub\learning\Learning.MyBot\bin\System.IdentityModel.Tokens.Jwt.dll
+H:\gayhub\learning\Learning.MyBot\bin\System.Net.Http.Formatting.dll
+H:\gayhub\learning\Learning.MyBot\bin\System.Web.Http.dll
+H:\gayhub\learning\Learning.MyBot\bin\System.Web.Http.WebHost.dll
+H:\gayhub\learning\Learning.MyBot\bin\Autofac.xml
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.Bot.Builder.xml
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.Bot.Connector.xml
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.Rest.ClientRuntime.xml
+H:\gayhub\learning\Learning.MyBot\bin\Microsoft.WindowsAzure.Configuration.xml
+H:\gayhub\learning\Learning.MyBot\bin\Newtonsoft.Json.xml
+H:\gayhub\learning\Learning.MyBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+H:\gayhub\learning\Learning.MyBot\bin\System.IdentityModel.Tokens.Jwt.xml
+H:\gayhub\learning\Learning.MyBot\bin\System.Net.Http.Formatting.xml
+H:\gayhub\learning\Learning.MyBot\bin\System.Web.Http.xml
+H:\gayhub\learning\Learning.MyBot\bin\System.Web.Http.WebHost.xml
+H:\gayhub\learning\Learning.MyBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+H:\gayhub\learning\Learning.MyBot\bin\en\Microsoft.Bot.Builder.resources.dll
+H:\gayhub\learning\Learning.MyBot\bin\es\Microsoft.Bot.Builder.resources.dll
+H:\gayhub\learning\Learning.MyBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+H:\gayhub\learning\Learning.MyBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+H:\gayhub\learning\Learning.MyBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+H:\gayhub\learning\Learning.MyBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+H:\gayhub\learning\Learning.MyBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+H:\gayhub\learning\Learning.MyBot\obj\Debug\Learning.MyBot.csprojResolveAssemblyReference.cache
+H:\gayhub\learning\Learning.MyBot\obj\Debug\Bot Application1.dll
+H:\gayhub\learning\Learning.MyBot\obj\Debug\Bot Application1.pdb

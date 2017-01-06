@@ -11,3 +11,5 @@ H:\gayhub\learning\Learning.Redis\bin\Debug\ServiceStack.Text.xml
 H:\gayhub\learning\Learning.Redis\obj\Debug\Learning.Redis.csprojResolveAssemblyReference.cache
 H:\gayhub\learning\Learning.Redis\obj\Debug\Learning.Redis.exe
 H:\gayhub\learning\Learning.Redis\obj\Debug\Learning.Redis.pdb
+H:\gayhub\learning\Learning.Redis\bin\Debug\Learn.Core.dll
+H:\gayhub\learning\Learning.Redis\bin\Debug\Learn.Core.pdb

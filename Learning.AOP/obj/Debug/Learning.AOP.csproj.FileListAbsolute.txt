@@ -18,4 +18,3 @@ H:\gayhub\learning\Learning.AOP\obj\Debug\Learning.AOP.exe
 H:\gayhub\learning\Learning.AOP\obj\Debug\Learning.AOP.pdb
 H:\gayhub\learning\Learning.AOP\bin\Debug\Learning.AOP.exe
 H:\gayhub\learning\Learning.AOP\bin\Debug\Learning.AOP.pdb
-H:\gayhub\learning\Learning.AOP\obj\Debug\Learning.AOP.csprojResolveAssemblyReference.cache

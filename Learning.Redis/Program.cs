@@ -1,5 +1,7 @@
-﻿using ServiceStack.Redis;
+﻿using Learning.Redis.Extensions;
+using ServiceStack.Redis;
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 
 namespace Learning.Redis
@@ -20,31 +22,18 @@ namespace Learning.Redis
 			//	result = redis.Get<string>("hance");
 			//	Console.WriteLine(result);
 			//}
+			//var redis = RedisManager.GetClient();
 
+			//var user=redis.GetHashEntity<User>("users:1");
 
-			//using (RedisUnitOfWork uof = new RedisUnitOfWork(RedisManager.GetClient()))
+			//var user = redis.GetFromHash<User>("users:1");  这个是什么？
+
+			//long id = redis.IncrementValue("ids:user");
+			//if (id > 0)
 			//{
-			//	try
-			//	{
-			//		uof.TranCommand(e => e.Set<string>("hi", "hello"));
-			//		uof.TranCommand(e => e.Set<string>("hance", "cece"));
-			//		uof.Commit();
-			//	}
-			//	catch (Exception)
-			//	{
-			//		uof.Roolback();
-			//		throw;
-			//	}
+			//	var uid = $"users:{id}";
+			//	redis.StoreHashEntity(uid, new User() { Age = 42, Name = "大叔" });
 			//}
-
-			using (var redis = RedisManager.GetClient())
-			{
-				var result = redis.Get<string>("hi");
-				Console.WriteLine(result);
-
-				result = redis.Get<string>("hance");
-				Console.WriteLine(result);
-			}
 
 			Console.ReadKey();
 		}

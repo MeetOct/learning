@@ -60,6 +60,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\HashAttribute.cs" />
+    <Compile Include="Extensions\RedisHashExtension.cs" />
     <Compile Include="IRedisUnitOfWork.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Program.cs" />
@@ -67,10 +69,17 @@
     <Compile Include="RedisManager.cs" />
     <Compile Include="RedisStringRepository.cs" />
     <Compile Include="RedisUnitOfWork.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Learning.Core\Learning.Core.csproj">
+      <Project>{6C82B106-7468-4E84-8EDA-A04F1300B4D5}</Project>
+      <Name>Learning.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

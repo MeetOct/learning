@@ -204,7 +204,7 @@ namespace Learning.luceneNet
 		{
 			SimpleHTMLFormatter simpleHTMLFormatter = new SimpleHTMLFormatter("<font color=\"Red\">", "</font>");
 			Highlighter highlighter = new Highlighter(simpleHTMLFormatter, new Segment());
-			highlighter.FragmentSize = 255; //大小
+			highlighter.FragmentSize = 50; //大小
 			string bodyPreview = highlighter.GetBestFragment(keyword, body); //最佳匹配摘要
 			if (string.IsNullOrEmpty(bodyPreview))
 			{

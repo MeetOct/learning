@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Learning.AOP
 {
@@ -8,10 +10,16 @@ namespace Learning.AOP
 	}
 
 	[MyAOP]
-	public class Person : ContextBoundObject, IPerson
+	//[MyProxy(typeof(LogIntercept), typeof(TimeIntercept))]
+	public class Person : Component
 	{
 		private string _name;
 		private int _age;
+
+		public Person() : this("hance", 24)
+		{
+			Console.WriteLine("构造函数");
+		}
 
 		public Person(string name):this(name,24)
 		{
@@ -24,7 +32,6 @@ namespace Learning.AOP
 		}
 
 		[Log]
-		[Hello]
 		public void Say(string words)
 		{
 			if (string.IsNullOrWhiteSpace(words))
@@ -32,6 +39,11 @@ namespace Learning.AOP
 				Console.WriteLine(string.Format("{0} said nothing"));
 			}
 			Console.WriteLine(string.Format("{0} said {1}",_name,words));
+		}
+
+		public void Log()
+		{
+			Console.WriteLine("log");
 		}
 	}
 }

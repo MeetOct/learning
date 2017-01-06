@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Runtime.Remoting.Messaging;
@@ -9,18 +10,32 @@ using System.Threading.Tasks;
 namespace Learning.AOP
 {
 	[AttributeUsage(AttributeTargets.Class)]
-	public class MyAOPAttribute : ContextAttribute, IContributeObjectSink
+	public class MyAOPAttribute : ContextAttribute, IContributeServerContextSink, IContributeObjectSink, IContributeClientContextSink, IContributeEnvoySink
 	{
 		public MyAOPAttribute() : base("MyAOP")
 		{
 			Console.WriteLine("MyAOP begin");
 		}
-
 		public IMessageSink GetObjectSink(MarshalByRefObject obj, IMessageSink nextSink)
 		{
+			Console.WriteLine("GetObjectSink");
+			return nextSink.AddLogSink();
+		}
+		public IMessageSink GetEnvoySink(MarshalByRefObject obj, IMessageSink nextSink)
+		{
+			Console.WriteLine("GetEnvoySink");
+			return nextSink;
+		}
+		public IMessageSink GetClientContextSink(IMessageSink nextSink)
+		{
+			Console.WriteLine("GetClientContextSink");
+			return nextSink;
+		}
+		public IMessageSink GetServerContextSink(IMessageSink nextSink)
+		{
+			Console.WriteLine("GetServerContextSink");
 			//先添加后执行
-			return nextSink.AddLogSink()
-									.AddHelloSink();
+			return nextSink;
 		}
 	}
 
