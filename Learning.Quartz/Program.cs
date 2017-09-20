@@ -14,13 +14,14 @@ namespace Learning.Quartz
 		{
 
 			var list=Assembly.GetExecutingAssembly().GetTypes().Where(t => t.GetInterface("IJob") != null);
-			Common.Logging.LogManager.Adapter = new Common.Logging.Simple.ConsoleOutLoggerFactoryAdapter { Level = Common.Logging.LogLevel.Info };
+			Common.Logging.LogManager.Adapter = new Common.Logging.Simple.ConsoleOutLoggerFactoryAdapter { Level = Common.Logging.LogLevel.Error };
 
 			IScheduler scheduler = StdSchedulerFactory.GetDefaultScheduler();
 			scheduler.Start();
 
 			IJobDetail job = JobBuilder.Create<TimeJob>()
 														.WithIdentity("time")
+                                                        .SetJobData(new JobDataMap())
 														.StoreDurably()
 														.Build();
 
@@ -47,13 +48,14 @@ namespace Learning.Quartz
 				Thread.Sleep(TimeSpan.FromSeconds(2));
 				scheduler.UnscheduleJob(new TriggerKey("time"));
 			});
+
 			Task.Run(() =>
 			{
-				Thread.Sleep(TimeSpan.FromSeconds(4));
-				ITrigger trigger2 = TriggerBuilder.Create().StartNow().WithIdentity("time2",null).ForJob(new JobKey("time")).WithSimpleSchedule(x => x.WithIntervalInSeconds(1).RepeatForever()).Build();
+				Thread.Sleep(TimeSpan.FromSeconds(10));
+				ITrigger trigger2 = TriggerBuilder.Create().StartNow().WithIdentity("time2",null).ForJob(new JobKey("time")).WithSimpleSchedule(x => x.WithIntervalInSeconds(2).RepeatForever()).Build();
 				scheduler.ScheduleJob(trigger2);
 			});
-			Thread.Sleep(TimeSpan.FromSeconds(8));
+			Thread.Sleep(TimeSpan.FromSeconds(30));
 
 			StopScheduler();
 
@@ -72,7 +74,8 @@ namespace Learning.Quartz
 	{
 		public void Execute(IJobExecutionContext context)
 		{
-			Console.WriteLine(DateTime.Now.ToString());
+            JobDataMap jobDetail = context.MergedJobDataMap;
+            Console.WriteLine(DateTime.Now.ToString());
 		}
 	}
 
