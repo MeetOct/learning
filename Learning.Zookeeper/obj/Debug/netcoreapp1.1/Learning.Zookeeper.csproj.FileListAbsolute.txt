@@ -1,0 +1,11 @@
+E:\gayhub\learning\Learning.Zookeeper\bin\Debug\netcoreapp1.1\Learning.Zookeeper.deps.json
+E:\gayhub\learning\Learning.Zookeeper\bin\Debug\netcoreapp1.1\Learning.Zookeeper.runtimeconfig.json
+E:\gayhub\learning\Learning.Zookeeper\bin\Debug\netcoreapp1.1\Learning.Zookeeper.runtimeconfig.dev.json
+E:\gayhub\learning\Learning.Zookeeper\bin\Debug\netcoreapp1.1\Learning.Zookeeper.dll
+E:\gayhub\learning\Learning.Zookeeper\bin\Debug\netcoreapp1.1\Learning.Zookeeper.pdb
+E:\gayhub\learning\Learning.Zookeeper\obj\Debug\netcoreapp1.1\Learning.Zookeeper.csprojResolveAssemblyReference.cache
+E:\gayhub\learning\Learning.Zookeeper\obj\Debug\netcoreapp1.1\Learning.Zookeeper.AssemblyInfo.cs
+E:\gayhub\learning\Learning.Zookeeper\obj\Debug\netcoreapp1.1\Learning.Zookeeper.dll
+E:\gayhub\learning\Learning.Zookeeper\obj\Debug\netcoreapp1.1\Learning.Zookeeper.pdb
+E:\gayhub\learning\Learning.Zookeeper\obj\Debug\netcoreapp1.1\Learning.Zookeeper.csproj.CoreCompileInputs.cache
+E:\gayhub\learning\Learning.Zookeeper\obj\Debug\netcoreapp1.1\Learning.Zookeeper.AssemblyInfoInputs.cache

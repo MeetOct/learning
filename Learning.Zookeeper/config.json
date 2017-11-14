@@ -1,0 +1,8 @@
+{
+  "Apollo": {
+    "AppID": "SampleApp",
+    "Url": "http://47.96.20.120:8080",
+    "RefreshInterval": 60000,
+    "Cluster": "dev"
+  }
+}
