@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  learning.aop:
+    image: learning.aop
+    build:
+      context: .\Learning.AOP
+      dockerfile: Dockerfile
