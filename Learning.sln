@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.3
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.AOP", "Learning.AOP\Learning.AOP.csproj", "{203A7CD5-D861-4C36-9E90-D25E3FF60FF3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.HtmlExtensions", "Learning.HtmlExtensions\Learning.HtmlExtensions.csproj", "{B3C98D8C-660F-43EF-8117-DAF23E4D61E7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.Castle", "Learning.Castle\Learning.Castle.csproj", "{9BFD4849-A0D6-465D-B9F9-57318D808BDF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.RabbitMQ", "Learning.RabbitMQ\Learning.RabbitMQ.csproj", "{B4EB0A3F-EA8D-478F-B9EB-5BCCAD5F0713}"
 EndProject
@@ -29,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning.Zookeeper", "Learn
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B8ECE326-7752-419A-B104-37C17BED432C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning.MSIL", "Learning.MSIL\Learning.MSIL.csproj", "{57613267-15A3-44F5-8F20-99E031C988DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,10 +43,6 @@ Global
 		{B3C98D8C-660F-43EF-8117-DAF23E4D61E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3C98D8C-660F-43EF-8117-DAF23E4D61E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3C98D8C-660F-43EF-8117-DAF23E4D61E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9BFD4849-A0D6-465D-B9F9-57318D808BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9BFD4849-A0D6-465D-B9F9-57318D808BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9BFD4849-A0D6-465D-B9F9-57318D808BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9BFD4849-A0D6-465D-B9F9-57318D808BDF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4EB0A3F-EA8D-478F-B9EB-5BCCAD5F0713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B4EB0A3F-EA8D-478F-B9EB-5BCCAD5F0713}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4EB0A3F-EA8D-478F-B9EB-5BCCAD5F0713}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +83,10 @@ Global
 		{B8ECE326-7752-419A-B104-37C17BED432C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8ECE326-7752-419A-B104-37C17BED432C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8ECE326-7752-419A-B104-37C17BED432C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57613267-15A3-44F5-8F20-99E031C988DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57613267-15A3-44F5-8F20-99E031C988DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57613267-15A3-44F5-8F20-99E031C988DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57613267-15A3-44F5-8F20-99E031C988DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

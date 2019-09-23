@@ -9,7 +9,6 @@ namespace Learn.Core.Common
 {
 	public static class Singleton
 	{
-		private static readonly object syncObject = new object();
 		private static readonly ConcurrentDictionary<Type, object> currentdic = new ConcurrentDictionary<Type, object>(); 
 		//private static readonly Dictionary<Type, object> dic = new Dictionary<Type, object>();
 		public static T GetInstance<T>()

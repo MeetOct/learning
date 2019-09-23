@@ -1,8 +1,0 @@
-E:\github\learning\Learning.Core\bin\Debug\Learn.Core.dll
-E:\github\learning\Learning.Core\bin\Debug\Learn.Core.pdb
-E:\github\learning\Learning.Core\obj\Debug\Learn.Core.dll
-E:\github\learning\Learning.Core\obj\Debug\Learn.Core.pdb
-H:\gayhub\learning\Learning.Core\bin\Debug\Learn.Core.dll
-H:\gayhub\learning\Learning.Core\bin\Debug\Learn.Core.pdb
-H:\gayhub\learning\Learning.Core\obj\Debug\Learn.Core.dll
-H:\gayhub\learning\Learning.Core\obj\Debug\Learn.Core.pdb

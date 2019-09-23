@@ -71,16 +71,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="bin\Debug\Dictionaries\Dict.dct" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\Dictionaries\ChsDoubleName1.txt" />
-    <Content Include="bin\Debug\Dictionaries\ChsDoubleName2.txt" />
-    <Content Include="bin\Debug\Dictionaries\ChsSingleName.txt" />
-    <Content Include="bin\Debug\Dictionaries\Stopword.txt" />
-    <Content Include="bin\Debug\Dictionaries\Synonym.txt" />
-    <Content Include="bin\Debug\Dictionaries\Wildcard.txt" />
     <Content Include="Dos.PanGu.更新日志.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
